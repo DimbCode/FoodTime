@@ -1,0 +1,30 @@
+// Imports Files
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
+// Zeroing Out Files
+
+@import "ZeroingOut.scss";
+
+// Variables
+
+@import "variables.scss";
+
+// Started Styles Files
+
+@import "startedStyles.scss";
+
+// General Classes Files
+
+@import "generalClasses.scss";
+
+// Sections Files
+
+@import "sections/header.scss";
+@import "sections/home.scss";
+@import "sections/explore.scss";
+@import "sections/achivements.scss";
+@import "sections/vacancies.scss";
+@import "sections/questions.scss";
+@import "sections/app.scss";
+@import "sections/footer.scss";

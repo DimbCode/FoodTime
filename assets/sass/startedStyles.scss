@@ -1,0 +1,23 @@
+// Started Styles
+
+body {
+    font-family: $primaryFont;
+    font-size: $primaryFz;
+    font-style: normal;
+    font-weight: $normal;
+}
+
+.wrapper {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.main {
+    min-height: 100vh;
+    background: $white;
+}
+
+svg, img, video {
+    max-width: 100%;
+    height: auto;
+}
