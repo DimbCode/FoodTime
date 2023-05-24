@@ -78,6 +78,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  color: #3F3F3F;
 }
 
 .wrapper {
@@ -100,4 +101,147 @@ svg, img, video {
   max-width: 1460px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__link {
+  display: inline-block;
+}
+.logo__img {
+  width: 147px;
+}
+
+.drop-down {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100px;
+  background: white;
+  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+.drop-down__link-list > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.drop-down__link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3F3F3F;
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header {
+  min-height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px 0;
+  border-bottom: 1px solid #3F3F3F;
+}
+.header__container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__nav {
+  margin-right: 101px;
+}
+.header__link-item {
+  position: relative;
+}
+.header__link-list > *:not(:last-child) {
+  margin-right: 70px;
+}
+.header__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 200%;
+  color: #3F3F3F;
+  position: relative;
+}
+.header__link--drop-down::before {
+  content: "";
+  position: absolute;
+  left: calc(100% + 5px);
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 13px;
+  height: 8px;
+  background-image: url("../images/arrow-down.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.header__login {
+  gap: 23px;
+}
+.header__login-btn {
+  height: 67px;
+  min-width: 60px;
+  padding: 0 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 225px;
+  border: 1px solid #396C03;
+  background: #396C03;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 170%;
+  height: 58px;
+  min-width: 154px;
+}
+.header__cart-btn {
+  height: 67px;
+  min-width: 60px;
+  padding: 0 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 225px;
+  border: 1px solid #396C03;
+  background: #396C03;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 170%;
+  height: 60px;
+}
+.header__cart-icon {
+  width: 28px;
 }

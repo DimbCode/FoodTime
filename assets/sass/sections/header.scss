@@ -1,0 +1,70 @@
+// Header Styles
+
+.header {
+
+    min-height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25px 0;
+    border-bottom: 1px solid $black;
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__nav {
+        margin-right: 101px;
+    }
+
+    &__link-item {
+        position: relative;
+    }
+
+    &__link-list {
+        & > *:not(:last-child) {
+            margin-right: 70px;
+        }
+    }
+
+    &__link {
+        font-weight: $medium;
+        font-size: 18px;
+        line-height: 200%;
+        color: $black;
+        position: relative;
+
+        &--drop-down::before {
+            content: "";
+            position: absolute;
+            left: calc(100% + 5px);
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 13px;
+            height: 8px;
+            background-image: url("../images/arrow-down.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__login {
+        gap: 23px;
+    }
+
+    &__login-btn {
+        @include btn($primaryColor, $primaryColor, $white);
+        height: 58px;
+        min-width: 154px;
+    }
+
+    &__cart-btn {
+        @include btn($primaryColor, $primaryColor, $white);
+        height: 60px;
+    }
+
+    &__cart-icon {
+        width: 28px;
+    }
+}

@@ -6,3 +6,69 @@
     padding: 0 $containerPadding;
     margin: 0 auto;
 }
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+
+    &__link {
+        display: inline-block;
+    }
+
+    &__img {
+        width: 147px;
+    }
+}
+
+.drop-down {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    background: $white;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+
+    &__link-list {
+        & > *:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: $medium;
+        color: $black;
+    }
+}
+
+@mixin btn($border, $background, $color) {
+    height: 67px;
+    min-width: 60px;
+    padding: 0 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 225px;
+    border: 1px solid $border;
+    background: $background;
+    color: $color;
+    font-weight: $medium;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.none {
+    display: none;
+}
+
+.hidden {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}

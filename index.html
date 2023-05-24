@@ -5,13 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/main.css">
-    <title>Document</title>
+    <title>FoodTime</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container">
-
+            <div class="container flex header__container">
+                <section class="header__left">
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <img src="assets/images/logo.png" alt="FoodTime" class="logo__img">
+                        </a>
+                    </div>
+                </section>
+                <section class="header__right flex">
+                    <nav class="header__nav">
+                        <ul class="flex header__link-list">
+                            <li class="header__link-item">
+                                <a href="#" class="header__link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="header__link-item">
+                                <a href="#" class="header__link">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="header__link-item">
+                                <a href="#" class="header__link">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="header__link-item">
+                                <a href="#" class="header__link header__link--drop-down">
+                                    EN
+                                </a>
+                                <div class="drop-down hidden header__drop-down">
+                                    <ul class="drop-down__link-list">
+                                        <li class="drop-down__link-item">
+                                            <a href="#" class="drop-down__link">
+                                                RUS
+                                            </a>
+                                        </li>
+                                        <li class="drop-down__link-item">
+                                            <a href="#" class="drop-down__link">
+                                                EN
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="flex header__login">
+                        <a href="#" class="btn header__login-btn">
+                            Login
+                        </a>
+                        <button class="btn header__cart-btn">
+                            <img src="assets/images/cart.svg" alt="Cart" class="header__cart-icon">
+                        </button>
+                    </div>
+                </section>
             </div>
         </header>
         <main class="main">
