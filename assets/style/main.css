@@ -259,6 +259,19 @@ svg, img, video {
   margin-bottom: 27px;
 }
 
+.title-mini {
+  font-family: "Merienda";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 130%;
+  color: #396C03;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 160%;
+}
+
 .header {
   min-height: 100px;
   width: 100%;
@@ -378,4 +391,54 @@ svg, img, video {
 }
 .home__img {
   width: 535px;
+}
+
+.explore {
+  min-height: 600px;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: url("../images/explore-background.png") right center/751px 500px no-repeat;
+  background-color: rgba(255, 139, 0, 0.05);
+}
+.explore__title {
+  max-width: 527px;
+  margin-bottom: 10px;
+}
+.explore__subtitle {
+  max-width: 567px;
+  margin-bottom: 14px;
+}
+.explore__btn {
+  height: 67px;
+  min-width: 60px;
+  padding: 0 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 225px;
+  border: 1px solid #396C03;
+  background: #396C03;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 170%;
+  min-width: 231px;
+  gap: 15px;
+}
+.explore__btn::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 16px;
+  background-image: url("../images/arrow-right.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
