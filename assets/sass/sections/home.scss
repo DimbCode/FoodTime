@@ -1,0 +1,31 @@
+// Home Styles
+
+.home {
+
+    min-height: 856px;
+    width: 100%;
+    padding-top: 154px;
+    background: url("../images/home-bg-item.png") 0 42px / 288px no-repeat,
+                url("../images/home-bg-item.png") right 112px / 288px no-repeat;
+    background-color: rgba(107, 145, 66, 0.1);
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 681px;
+    }
+
+    &__subtitle {
+        font-weight: $semibold;
+        font-size: 24px;
+        line-height: 140%;
+        color: $primaryGray;
+        margin-bottom: 27px;
+    }
+
+    &__img {
+        width: 535px;
+    }
+}

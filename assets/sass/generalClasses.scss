@@ -72,3 +72,64 @@
     visibility: hidden;
     opacity: 0;
 }
+
+.input {
+
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    background: rgba(256, 256, 256, 0.3);
+    border: 2px solid rgba(57, 108, 3, 0.3);
+    border-radius: 120px;
+    padding-left: 9px;
+
+    &__icon {
+        @include btn($secondaryColor, $secondaryColor, $white);
+        min-width: 49px;
+        height: 49px;
+        padding: 0;
+        align-self: center;
+    }
+
+    &__icon-img {
+        width: 30px;
+    }
+
+    &__input {
+        width: 413px;
+        font-weight: $medium;
+        font-size: 22px;
+        line-height: 170%;
+        background: none;
+        color: $black;
+
+        &::placeholder {
+            color: $disabled;
+        }
+    }
+
+    &__btn {
+        @include btn($primaryColor, $primaryColor, $white);
+        min-width: 210px;
+        gap: 8px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            background-image: url("../images/search.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.title {
+    font-family: $secondaryFont;
+    font-weight: $bold;
+    font-size: 65px;
+    line-height: 130%;
+    color: $primaryColor;
+    margin-bottom: 27px;
+}
