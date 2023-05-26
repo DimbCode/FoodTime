@@ -1,0 +1,57 @@
+// Vacancies Styles
+
+.vacancies {
+
+    height: 827px;
+    width: 100%;
+
+    &__container {
+        height: 100%;
+    }
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/vacancies-background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 50px;
+        border-radius: 50px;
+    }
+
+    &__title {
+        font-weight: $bold;
+        font-size: 40px;
+        line-height: 130%;
+        color: $white;
+        max-width: 629px;
+        margin-bottom: 19px;
+    }
+
+    &__subtitle {
+        font-weight: $semibold;
+        font-size: 24px;
+        line-height: 140%;
+        color: $lightGray;
+        max-width: 534px;
+        margin-bottom: 15px;
+    }
+
+    &__btn {
+        @include btn($secondaryColor, $secondaryColor, $white);
+        min-width: 276px;
+        gap: 15px;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 10px;
+            width: 16px;
+            background-image: url("../images/arrow-right.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+}
