@@ -718,3 +718,54 @@ svg, img, video {
   line-height: 160%;
   color: #525252;
 }
+
+.app {
+  min-height: 550px;
+  padding: 38px 0;
+  background: rgba(255, 139, 0, 0.1);
+}
+.app__container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.app__title {
+  color: #396C03;
+  max-width: 474px;
+  margin-bottom: 12px;
+}
+.app__subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #676767;
+  max-width: 447px;
+  margin-bottom: 30px;
+}
+.app__buttons {
+  gap: 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.app__btn {
+  background: #000000;
+  min-width: 242px;
+  height: 88px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 13px;
+}
+.app__btn-img {
+  width: 195px;
+}
+.app__img {
+  width: 711px;
+}

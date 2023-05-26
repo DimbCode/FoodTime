@@ -1,0 +1,50 @@
+// App Styles
+
+.app {
+
+    min-height: 550px;
+    padding: 38px 0;
+    background: rgba(255, 139, 0, 0.1);
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: $primaryColor;
+        max-width: 474px;
+        margin-bottom: 12px;
+    }
+
+    &__subtitle {
+        font-weight: $medium;
+        font-size: 20px;
+        line-height: 140%;
+        color: $primaryGray;
+        max-width: 447px;
+        margin-bottom: 30px;
+    }
+
+    &__buttons {
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    &__btn {
+        background: $darkBlack;
+        min-width: 242px;
+        height: 88px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 13px;
+    }
+
+    &__btn-img {
+        width: 195px;
+    }
+
+    &__img {
+        width: 711px;
+    }
+}
