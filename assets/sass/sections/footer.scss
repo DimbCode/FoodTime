@@ -1,0 +1,66 @@
+// Footer Styles
+
+.footer {
+    
+    min-height: 427px;
+    width: 100%;
+    padding: 93px 0 40px 0;
+    background: $primaryColorDark;
+
+    &__logo-img {
+        width: 217px;
+    }
+
+    &__top {
+        justify-content: space-between;
+        margin-bottom: 74px;
+    }
+
+    &__logo {
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 160%;
+        color: $lightGray2;
+        max-width: 485px;
+    }
+
+    &__right {
+        gap: 40px;
+    }
+
+    &__link-list > *:not(:last-child) {
+        margin-bottom: 13px;
+    }
+
+    &__link-item--title {
+        margin-bottom: 35px !important;
+    }
+
+    &__link-title {
+        font-weight: $semibold;
+        font-size: 20px;
+        line-height: 30px;
+        color: $white;
+    }
+
+    &__link {
+        max-width: 210px;
+        font-size: 20px;
+        line-height: 30px;
+        color: $lightGray2;
+    }
+
+    &__bottom {
+        width: 100%;
+    }
+
+    &__copyright {
+        font-size: 16px;
+        line-height: 24px;
+        color: $lightGray2;
+    }
+}

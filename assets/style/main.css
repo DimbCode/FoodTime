@@ -769,3 +769,58 @@ svg, img, video {
 .app__img {
   width: 711px;
 }
+
+.footer {
+  min-height: 427px;
+  width: 100%;
+  padding: 93px 0 40px 0;
+  background: #224300;
+}
+.footer__logo-img {
+  width: 217px;
+}
+.footer__top {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 74px;
+}
+.footer__logo {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.footer__text {
+  font-size: 18px;
+  line-height: 160%;
+  color: #DEDEDE;
+  max-width: 485px;
+}
+.footer__right {
+  gap: 40px;
+}
+.footer__link-list > *:not(:last-child) {
+  margin-bottom: 13px;
+}
+.footer__link-item--title {
+  margin-bottom: 35px !important;
+}
+.footer__link-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+.footer__link {
+  max-width: 210px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #DEDEDE;
+}
+.footer__bottom {
+  width: 100%;
+}
+.footer__copyright {
+  font-size: 16px;
+  line-height: 24px;
+  color: #DEDEDE;
+}
