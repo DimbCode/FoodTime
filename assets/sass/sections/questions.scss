@@ -82,6 +82,7 @@
             background-image: url("../images/plus.svg");
             background-repeat: no-repeat;
             background-size: 100%;
+            transition: .5s;
         }
 
         &--active::before {
