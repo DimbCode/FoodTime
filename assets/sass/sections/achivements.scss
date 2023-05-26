@@ -1,0 +1,45 @@
+// Achivements Styles
+
+.achivements {
+
+    width: 100%;
+    padding: 105px 0;
+
+    &__items {
+        justify-content: space-between;
+    }
+}
+
+.achivement {
+    
+    min-height: 388px;
+    flex: 1 1 33.3333%;
+    padding: 60px 47px 38px 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &--active {
+        background: rgba(57, 108, 3, 0.05);
+        border-radius: 15px;
+    }
+
+    &__icon {
+        width: 72px;
+        margin-bottom: 22px;
+    }
+
+    &__title {
+        font-weight: $semibold;
+        font-size: 30px;
+        line-height: 140%;
+        margin-bottom: 7px;
+        max-width: 295px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 160%;
+        max-width: 295px;
+    }
+}
