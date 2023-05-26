@@ -65,6 +65,7 @@
 
 .none {
     display: none;
+    position: absolute;
 }
 
 .hidden {
@@ -135,11 +136,9 @@
 }
 
 .title-mini {
-    font-family: $secondaryFont;
-    font-weight: $bold;
-    font-size: 50px;
-    line-height: 130%;
-    color: $primaryColor;
+    font-weight: $semibold;
+    font-size: 40px;
+    line-height: 160%;
 }
 
 .subtitle {

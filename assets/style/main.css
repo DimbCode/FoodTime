@@ -143,6 +143,7 @@ svg, img, video {
 
 .none {
   display: none;
+  position: absolute;
 }
 
 .hidden {
@@ -260,11 +261,9 @@ svg, img, video {
 }
 
 .title-mini {
-  font-family: "Merienda";
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 130%;
-  color: #396C03;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 160%;
 }
 
 .subtitle {
@@ -405,6 +404,11 @@ svg, img, video {
 .explore__title {
   max-width: 527px;
   margin-bottom: 10px;
+  font-family: "Merienda";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 130%;
+  color: #396C03;
 }
 .explore__subtitle {
   max-width: 567px;
@@ -561,4 +565,156 @@ svg, img, video {
   background-image: url("../images/arrow-right.svg");
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.questions {
+  width: 100%;
+  padding: 105px 0;
+}
+.questions__header {
+  margin-bottom: 36px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.questions__title {
+  margin-bottom: 32px;
+}
+.questions__categories {
+  gap: 17px;
+}
+.questions__btn {
+  height: 67px;
+  min-width: 60px;
+  padding: 0 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 225px;
+  border: 1px solid #396C03;
+  background: none;
+  color: #396C03;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 170%;
+  min-width: 258px;
+}
+.questions__btn--active {
+  height: 67px;
+  min-width: 60px;
+  padding: 0 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 225px;
+  border: 1px solid #396C03;
+  background: #396C03;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 170%;
+  min-width: 208px;
+}
+.questions__spoilers {
+  gap: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.questions__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.question {
+  width: 100%;
+  padding: 26px 11px 23px 31px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.question__open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.question__name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 200%;
+  color: #000000;
+}
+.question__btn {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid rgba(51, 51, 51, 0.3);
+  background: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.question__btn::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.question__btn--active::before {
+  height: 1.25px;
+  width: 13.75px;
+  background-image: url("../images/minus.svg");
+}
+.question__hidden {
+  margin-top: 29px;
+}
+.question__text {
+  font-size: 18px;
+  line-height: 160%;
+  color: #525252;
 }

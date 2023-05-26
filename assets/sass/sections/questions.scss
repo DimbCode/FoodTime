@@ -1,0 +1,103 @@
+// Questions Styles
+
+.questions {
+    
+    width: 100%;
+    padding: 105px 0;
+
+    &__header {
+        margin-bottom: 36px;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+    }
+    
+    &__categories {
+        gap: 17px;
+    }
+
+    &__btn {
+        @include btn($primaryColor, none, $primaryColor);
+        min-width: 258px;
+    }
+
+    &__btn--active {
+        @include btn($primaryColor, $primaryColor, $white);
+        min-width: 208px;
+    }
+
+    &__spoilers {
+        gap: 47px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__column {
+        flex: 1 1 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.question {
+
+    width: 100%;
+    padding: 26px 11px 23px 31px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+    &__open {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__name {
+        font-weight: $medium;
+        font-size: 18px;
+        line-height: 200%;
+        color: $darkBlack;
+    }
+
+    &__btn {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: 1px solid rgba(51, 51, 51, 0.3);
+        background: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 13px;
+            width: 13px;
+            background-image: url("../images/plus.svg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        &--active::before {
+            height: 1.25px;
+            width: 13.75px;
+            background-image: url("../images/minus.svg");
+        }
+    }
+
+    &__hidden {
+        margin-top: 29px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 160%;
+        color: $darkGray;
+    }
+}
