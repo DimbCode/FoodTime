@@ -1,0 +1,415 @@
+// Media Queries
+
+// Media Querie 1350px
+
+@media all and (max-width: 1350px) {
+
+    .home {
+
+        padding-top: 250px;
+
+        &__img {
+            display: none;
+        }
+
+        &__container {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+    }
+
+    .explore {
+
+        background: none;
+        background-color: rgba(255, 139, 0, 0.05);
+        justify-content: center;
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+    }
+
+    .app {
+
+        display: flex;
+        align-items: center;
+
+        &__container  {
+            gap: 60px;
+        }
+
+    }
+
+}
+
+// Media Querie 1150px
+
+@media all and (max-width: 1150px) {
+
+    .home {
+
+        min-height: 700px;
+        padding-top: 111px;
+        display: flex;
+        align-items: center;
+        background-image: none;
+
+        &__title {
+            font-size: 45px;
+        }
+
+    }
+
+}
+
+// Media Querie 1100px
+
+@media all and (max-width: 1100px) {
+
+    .burger-menu {
+        display: block;
+    }
+
+    .header {
+
+        &__nav,
+        &__login {
+            display: none;
+        }
+
+    }
+
+    .footer {
+
+        &__top {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__logo {
+            margin-left: 0;
+        }
+
+    }
+
+    .app {
+
+        &__btn {
+
+            min-width: 160px;
+            height: 60px;
+
+            &-img {
+                width: 120px;
+            }
+
+        }
+
+    }
+
+}
+
+// Media Querie 1000px
+
+@media all and (max-width: 1000px) {
+
+    .achivements {
+        padding: 80px 0;
+    }
+
+    .achivement {
+
+        padding: 30px 30px 30px 30px;
+        min-height: 320px;
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__icon {
+            width: 50px;
+        }
+
+    }
+
+    .vacancies {
+
+        height: 600px;
+
+        &__content {
+            padding: 25px;
+        }
+
+        &__title {
+            font-size: 35px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            text-align: center;
+        }
+
+    }
+
+    .question {
+
+        padding: 20px;
+
+        &__name {
+            line-height: 150%;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__hidden {
+            margin-top: 15px;
+        }
+
+    }
+
+    .title-mini {
+        line-height: 120%;
+    }
+
+}
+
+// Media Querie 768px
+
+@media all and (max-width: 768px) {
+
+    .burger-menu {
+
+        &__hidden-section-wrap {
+            width: 100%;
+        }
+
+    }
+
+    .app {
+
+        &__container {
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__column:last-child {
+            display: none;
+        }
+
+        &__buttons {
+            justify-content: center;
+        }
+
+    }
+
+    .home {
+
+        min-height: 500px;
+
+        &__title {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__input {
+            width: 100%;
+            padding-left: 25px;
+
+            & .input__input {
+                width: 100%;
+            }
+
+            & .input__icon {
+                display: none;
+            }
+        }
+
+    }
+
+    .explore {
+
+        min-height: 450px;
+
+        &__title {
+            font-size: 35px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+    }
+
+    .achivements {
+
+        &__items {
+            flex-wrap: wrap;
+        }
+        
+    }
+
+    .vacancies {
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__btn {
+            height: 55px;
+            min-width: 170px;
+
+            &::after {
+                display: none;
+            }
+        }
+
+    }
+
+    .questions {
+
+        &__spoilers {
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+        }
+
+    }
+
+}
+
+// Media Querie 550px
+
+@media all and (max-width: 550px) {
+
+    .vacancies {
+        height: 400px;
+    }
+
+    .achivements {
+        padding-bottom: 40px;
+    }
+
+    .questions {
+        padding: 70px 0;
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        &__header {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .app {
+        min-height: 400px;
+    }
+
+}
+
+// Media Querie 500px
+
+@media all and (max-width: 500px) {
+
+    .home {
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__input {
+            
+            & .input__btn {
+
+                height: 60px;
+                min-width: 150px;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+        }
+
+    }
+
+    .explore {
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 15px;
+        }
+
+        &__btn {
+
+            min-width: 160px;
+
+            &::after {
+                display: none;
+            }
+
+        }
+
+    }
+
+    .app {
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__buttons {
+            flex-wrap: wrap;
+        }
+
+    }
+
+    .vacancies {
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+    }
+
+}

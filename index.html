@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>FoodTime</title>
 </head>
 <body>
@@ -60,6 +61,7 @@
                             </li>
                         </ul>
                     </nav>
+
                     <div class="flex header__login">
                         <a href="#" class="btn header__login-btn">
                             Login
@@ -68,6 +70,66 @@
                             <img src="assets/images/cart.svg" alt="Cart" class="header__cart-icon">
                         </button>
                     </div>
+
+                    <div class="burger-menu header__burger-menu">
+                        <div class="burger-menu__open-section">
+                            <button class="burger-menu__btn">
+                                <img src="assets/images/drop-down.svg" alt="Menu" class="burger-menu__btn-img">
+                            </button>
+                        </div>
+                        <div class="hidden burger-menu__hidden-section">
+                            <div class="burger-menu__hidden-section-wrap">
+                                <ul class="burger-menu__link-list">
+                                    <li class="burger-menu__link-item">
+                                        <a href="#" class="burger-menu__link">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="burger-menu__link-item">
+                                        <a href="#" class="burger-menu__link">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li class="burger-menu__link-item">
+                                        <a href="#" class="burger-menu__link">
+                                            About us
+                                        </a>
+                                    </li>
+                                    <li class="burger-menu__link-item">
+                                        <a href="#" class="burger-menu__link burger-menu__link--active burger-menu__link--drop-down">
+                                            EN
+                                        </a>
+                                        <div class="drop-down hidden burger-menu__drop-down">
+                                            <ul class="drop-down__link-list">
+                                                <li class="drop-down__link-item">
+                                                    <a href="#" class="drop-down__link">
+                                                        RUS
+                                                    </a>
+                                                </li>
+                                                <li class="drop-down__link-item">
+                                                    <a href="#" class="drop-down__link">
+                                                        EN
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="flex burger-menu__login">
+                                    <a href="#" class="btn burger-menu__login-btn">
+                                        Login
+                                    </a>
+                                    <button class="btn burger-menu__cart-btn">
+                                        <img src="assets/images/cart.svg" alt="Cart" class="burger-menu__cart-icon">
+                                    </button>
+                                </div>
+                                <button class="burger-menu__skip-btn">
+                                    <img src="assets/images/skip.svg" alt="Skip" class="burger-menu__skip-btn-img">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </section>
             </div>
         </header>
@@ -80,9 +142,9 @@
 
             <!-- Home -->
 
-            <section class="home">
+            <section class="home" data-aos="fade" data-aos-duration="2000">
                 <div class="container flex home__container">
-                    <section class="home__section">
+                    <section class="home__section" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
                         <h1 class="title home__title">
                             Order food online from your favourite local restaurants.
                         </h1>
@@ -101,7 +163,7 @@
                             </div>
                         </form>
                     </section>
-                    <section class="home__section">
+                    <section class="home__section" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="1000">
                         <img src="assets/images/home-img.png" alt="200k+ People Delivered" class="home__img">
                     </section>
                 </div>
@@ -112,8 +174,8 @@
             <!-- Explore -->
 
             <section class="explore flex">
-                <div class="container">
-                    <div class="explore__section">
+                <div class="container explore__container">
+                    <div class="explore__section" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
                         <h2 class="explore__title">
                             Explore your favourite city’s food.
                         </h2>
@@ -134,7 +196,7 @@
             <section class="achivements">
                 <div class="container">
                     <div class="flex achivements__items">
-                        <article class="achivement achivement--active achivements__item">
+                        <article class="achivement achivement--active achivements__item" data-aos="flip-right" data-aos-duration="500" data-aos-delay="300">
                             <img src="assets/images/achivement-icon1.png" alt="" class="achivement__icon">
                             <h3 class="achivement__title">
                                 Wide selection of restaurants
@@ -143,7 +205,7 @@
                                 Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh tristique.
                             </p>
                         </article>
-                        <article class="achivement achivements__item">
+                        <article class="achivement achivements__item" data-aos="flip-right" data-aos-duration="500" data-aos-delay="500">
                             <img src="assets/images/achivement-icon2.png" alt="" class="achivement__icon">
                             <h3 class="achivement__title">
                                 Easy ordering process
@@ -152,7 +214,7 @@
                                 Lorem ipsum dolor sit amet consectetur. Ornare massa nunc .
                             </p>
                         </article>
-                        <article class="achivement achivements__item">
+                        <article class="achivement achivements__item" data-aos="flip-right" data-aos-duration="500" data-aos-delay="700">
                             <img src="assets/images/achivement-icon3.png" alt="" class="achivement__icon">
                             <h3 class="achivement__title">
                                 Fast delivery within 20 min
@@ -171,7 +233,7 @@
 
             <section class="vacancies">
                 <div class="container vacancies__container">
-                    <div class="flex vacancies__content">
+                    <div class="flex vacancies__content" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
                         <h2 class="vacancies__title">
                             Want to be a part of Foodtime?
                         </h2>
@@ -192,10 +254,10 @@
             <section class="questions">
                 <div class="container">
                     <header class="flex questions__header">
-                        <h2 class="title-mini questions__title">
+                        <h2 class="title-mini questions__title" data-aos="fade" data-aos-duration="500" data-aos-delay="300">
                             Frequently asked questions
                         </h2>
-                        <div class="flex questions__categories">
+                        <div class="flex questions__categories" data-aos="flip-down" data-aos-duration="500" data-aos-delay="500">
                             <button class="questions__btn questions__btn--active">
                                 General
                             </button>
@@ -206,7 +268,7 @@
                     </header>
                     <div class="questions__spoilers">
 
-                        <section class="questions__column">
+                        <section class="questions__column" data-aos="flip-right" data-aos-duration="500" data-aos-delay="500">
                             <div class="question questions__item">
                                 <section class="question__open">
                                     <h4 class="question__name">
@@ -256,7 +318,127 @@
                             </div>
                         </section>
 
-                        <section class="questions__column">
+                        <section class="questions__column" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
+                            <div class="question questions__item">
+                                <section class="question__open">
+                                    <h4 class="question__name">
+                                        What de I need to apply for the account?
+                                    </h4>
+                                    <button class="question__btn"></button>
+                                </section>
+                                <section class="question__hidden none">
+                                    <p class="question__text">
+                                        Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor convallis. Bibendum sapien suspendisse ipsum urna malesuada elit. Bibendum vitae nibh scelerisque sed aliquam ullamcorper est. 
+                                        <br>
+                                        Dui et est dignissim amet dis nulla vulputate. Id aenean senectus fames lobortis dolor turpis eget lacinia et.
+                                    </p>
+                                </section>
+                            </div>
+
+                            <div class="question questions__item">
+                                <section class="question__open">
+                                    <h4 class="question__name">
+                                        What de I need to apply for the account?
+                                    </h4>
+                                    <button class="question__btn"></button>
+                                </section>
+                                <section class="question__hidden none">
+                                    <p class="question__text">
+                                        Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor convallis. Bibendum sapien suspendisse ipsum urna malesuada elit. Bibendum vitae nibh scelerisque sed aliquam ullamcorper est. 
+                                        <br>
+                                        Dui et est dignissim amet dis nulla vulputate. Id aenean senectus fames lobortis dolor turpis eget lacinia et.
+                                    </p>
+                                </section>
+                            </div>
+
+                            <div class="question questions__item">
+                                <section class="question__open">
+                                    <h4 class="question__name">
+                                        What de I need to apply for the account?
+                                    </h4>
+                                    <button class="question__btn"></button>
+                                </section>
+                                <section class="question__hidden none">
+                                    <p class="question__text">
+                                        Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor convallis. Bibendum sapien suspendisse ipsum urna malesuada elit. Bibendum vitae nibh scelerisque sed aliquam ullamcorper est. 
+                                        <br>
+                                        Dui et est dignissim amet dis nulla vulputate. Id aenean senectus fames lobortis dolor turpis eget lacinia et.
+                                    </p>
+                                </section>
+                            </div>
+
+                            <div class="question questions__item">
+                                <section class="question__open">
+                                    <h4 class="question__name">
+                                        What de I need to apply for the account?
+                                    </h4>
+                                    <button class="question__btn"></button>
+                                </section>
+                                <section class="question__hidden none">
+                                    <p class="question__text">
+                                        Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor convallis. Bibendum sapien suspendisse ipsum urna malesuada elit. Bibendum vitae nibh scelerisque sed aliquam ullamcorper est. 
+                                        <br>
+                                        Dui et est dignissim amet dis nulla vulputate. Id aenean senectus fames lobortis dolor turpis eget lacinia et.
+                                    </p>
+                                </section>
+                            </div>
+                        </section>
+
+                    </div>
+
+                    <div class="questions__spoilers hidden">
+
+                        <section class="questions__column" data-aos="flip-right" data-aos-duration="500" data-aos-delay="500">
+                            <div class="question questions__item">
+                                <section class="question__open">
+                                    <h4 class="question__name">
+                                        What de I need to apply for the account?
+                                    </h4>
+                                    <button class="question__btn question__btn--active"></button>
+                                </section>
+                                <section class="question__hidden">
+                                    <p class="question__text">
+                                        Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor convallis. Bibendum sapien suspendisse ipsum urna malesuada elit. Bibendum vitae nibh scelerisque sed aliquam ullamcorper est. 
+                                        <br>
+                                        Dui et est dignissim amet dis nulla vulputate. Id aenean senectus fames lobortis dolor turpis eget lacinia et.
+                                    </p>
+                                </section>
+                            </div>
+
+                            <div class="question questions__item">
+                                <section class="question__open">
+                                    <h4 class="question__name">
+                                        What de I need to apply for the account?
+                                    </h4>
+                                    <button class="question__btn"></button>
+                                </section>
+                                <section class="question__hidden none">
+                                    <p class="question__text">
+                                        Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor convallis. Bibendum sapien suspendisse ipsum urna malesuada elit. Bibendum vitae nibh scelerisque sed aliquam ullamcorper est. 
+                                        <br>
+                                        Dui et est dignissim amet dis nulla vulputate. Id aenean senectus fames lobortis dolor turpis eget lacinia et.
+                                    </p>
+                                </section>
+                            </div>
+
+                            <div class="question questions__item">
+                                <section class="question__open">
+                                    <h4 class="question__name">
+                                        What de I need to apply for the account?
+                                    </h4>
+                                    <button class="question__btn"></button>
+                                </section>
+                                <section class="question__hidden none">
+                                    <p class="question__text">
+                                        Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor convallis. Bibendum sapien suspendisse ipsum urna malesuada elit. Bibendum vitae nibh scelerisque sed aliquam ullamcorper est. 
+                                        <br>
+                                        Dui et est dignissim amet dis nulla vulputate. Id aenean senectus fames lobortis dolor turpis eget lacinia et.
+                                    </p>
+                                </section>
+                            </div>
+                        </section>
+
+                        <section class="questions__column" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
                             <div class="question questions__item">
                                 <section class="question__open">
                                     <h4 class="question__name">
@@ -333,22 +515,22 @@
             <section class="app">
                 <div class="container flex app__container">
                     <section class="app__column">
-                        <h2 class="title-mini app__title">
+                        <h2 class="title-mini app__title" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
                             Put us in your pocket
                         </h2>
-                        <p class="app__subtitle">
+                        <p class="app__subtitle" data-aos="fade" data-aos-duration="600" data-aos-delay="300">
                             Download our app from google play or app store and you don’t have to be worry about your food anymore. 
                         </p>
                         <div class="flex app__buttons">
-                            <button class="app__btn">
+                            <button class="app__btn" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
                                 <img src="assets/images/app-store.png" alt="download on the appstore" class="app__btn-img">
                             </button>
-                            <button class="app__btn">
+                            <button class="app__btn" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
                                 <img src="assets/images/google-play.png" alt="download on the google play" class="app__btn-img">
                             </button>
                         </div>
                     </section>
-                    <section class="app__column">
+                    <section class="app__column" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
                         <img src="assets/images/app-img.png" alt="" class="app__img">
                     </section>
                 </div>
@@ -457,6 +639,10 @@
         <!-- Footer End -->
 
     </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/js/index.js" type="module"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

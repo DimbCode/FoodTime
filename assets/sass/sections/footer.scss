@@ -30,6 +30,7 @@
 
     &__right {
         gap: 40px;
+        flex-wrap: wrap;
     }
 
     &__link-list > *:not(:last-child) {
@@ -52,6 +53,37 @@
         font-size: 20px;
         line-height: 30px;
         color: $lightGray2;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 0;
+            height: 2px;
+            background: $lightGray2;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transform: rotate(-50deg);
+            transition: .5s;
+        }
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background: $lightGray2;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            transform: rotate(-30deg);
+            transition: .5s;
+        }
+
+        &:hover::before,
+        &:hover::after {
+            transform: rotate(0deg);
+            width: 50%;
+        }
     }
 
     &__bottom {

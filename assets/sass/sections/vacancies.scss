@@ -43,6 +43,12 @@
         @include btn($secondaryColor, $secondaryColor, $white);
         min-width: 276px;
         gap: 15px;
+        transition: .5s;
+
+        &:hover {
+            background: $darkBlack;
+            border-color: $darkBlack;
+        }
 
         &::after {
             content: "";
